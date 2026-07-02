@@ -1,0 +1,12 @@
+LINUX ENVIRONMENT VERIFICATION REPORT 
+1.USERNAME AND GROUPS:
+Username: coder
+Groups: coder sudo
+2.CURRENT SHELL:
+shell: /bin/bash
+3.CURRENT WORKING DIRECTORY:
+Directory: /home/coder
+4.WORKSPACE FILES AND DIRECTORIES:
+Succesfully listed files using 'ls -la'
+5.NETWROK CONNECTIVITY:
+Successfully verified internal interface using 'ping -c 3 127.0.0.1'
