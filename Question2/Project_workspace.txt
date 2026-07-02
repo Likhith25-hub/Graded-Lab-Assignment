@@ -1,0 +1,14 @@
+QUESTION 2: SECURE PROJECT WORKSPACE SETUP
+1. Directory Structure Created 
+a new project workspace folder named project_workspace was created in the home directory path.
+2.File permissions before and after modification
+before: The directory was initially initialized with the standard default creation permissions provided by operating system.
+after: Running the restriction commands locked down the folder tightly to drwx------
+3. Ownership details
+the created directory belongs directly to the current active terminal user account(coder) and is assigned to the corresponding group identity(coder).
+4. Umask value used
+The default environment creation profile sets baseline file parameters using the active umask value. I altered these directory parameters using the chmod.
+5. Explanations of how permissions protect project data
+restricting the directory properties to mode 700
+because the last 6 privilage fields are completely cleared out , all local group members and secondary guest accounts are barred 
+no outside users can navigate into the directory using cd ,list the file structure inside it or alter any information.
