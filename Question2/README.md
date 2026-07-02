@@ -1,0 +1,1 @@
+For this workspace setup assignment, I executed a sequence of local system security modifications to initialize a private workspace folder named project_workspace. I updated the underlying directory flags and access modes to ensure that the project workspace environment holds strict access controls.
