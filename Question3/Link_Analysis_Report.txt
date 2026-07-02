@@ -1,0 +1,22 @@
+QUESTION 3: FILE SYSTEM AND LINK ANALYSIS 
+
+
+1.Inode numbers of all files
+during first  part of the lab excercise, the original file and hard link shared the exact same inode tracking number
+the symbolic link had a completely different, unique inode number because it functions as an independent pointer shortcut
+
+2.Comparion between hard link and symbolic link
+Hard link: acts as direct mirror or an additional name pointing straight to the physical data on storage drive.
+symbolic link: works like a desktop shortcut containing text that points to filename path of target file.
+
+3. Effect of deleting the original file
+hard link: kept working perfectly. Even though source file was removed , the data remianed accessible through hard link.
+symbolic link: It broke immediately. It turned into an orphaned link because its target text path no longer points to a real file.
+
+4. Metadata and observations from Linux utilities 
+Running ls -li initially showed matching index values for the hard link.
+After running the rm command trying to use cat on the soft link threw an explicit system error message indicating file was missing.
+
+5. Conclusions
+hard links are highly resilient for data preservation because they act as independent entry points to file contents.
+Symbolic links are highly fragile and completely dependent on the original file name staying in its exact location.
