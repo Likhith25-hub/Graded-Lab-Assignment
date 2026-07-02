@@ -1,0 +1,1 @@
+for this assignment I set up a file link to study how Linux manages file system  pointers. I generated both hard and symbolic links for a text file, documented how the kernel assigns index inode numbers and performed a removal test.
