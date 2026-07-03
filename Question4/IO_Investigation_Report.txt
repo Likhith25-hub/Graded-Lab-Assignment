@@ -1,0 +1,16 @@
+LINUX FILE ACCESS AND I/O INVESTIIGATION REPORT
+
+OPEN FILES IDENTIFIED
+The system returned lsof:command not found indicates utility not installed here.
+
+FILE DESCRIPTOR OBSERVATIONS
+Successfully identified active descriptors 0,1,2 and 3 mapping to pseudo terminal
+
+OUTPUT REDIRECTION AND ERROR REDIRECTION RESULTS
+Successfully routed text using > to test_out.log and captured system error using 2> to test_err.log
+
+RESOURCE LIMITS OBSERVED
+Successfully checked system limits usinh ulimit -a revealing open file descriptor cap of 1048576
+
+EXPLANATION OF HOW LINUX MANAGES FILE I/O
+Linux treats processes and streams as standard files , assigning sequential numeric file descriptors.
